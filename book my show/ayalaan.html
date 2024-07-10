@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ayalaan</title>
+    <style>
+        body {
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        .toper {
+            display: grid;
+            grid-template-columns: 3fr 3fr 1fr 1fr;
+            background-color: #FFFFFF;
+
+
+        }
+
+        label {
+            text-transform: capitalize;
+        }
+
+        nav {
+            position: sticky;
+            top: 0px;
+            animation: hello 3s;
+        }
+
+        @keyframes hello {
+            0% {
+                transform: translatey(-100%);
+            }
+
+        }
+
+        li {
+            display: inline;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        .activites {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            border-radius: 20px;
+            background-color: grey;
+            font-size: 16px;
+            color: white;
+            text-transform: capitalize;
+
+
+        }
+
+        li:hover {
+            background-color: black;
+        }
+
+        input {
+            width: 90%;
+            font-size: 20px;
+            color: red;
+            border-radius: 15px;
+        }
+
+        select {
+            font-size: 20px;
+            width: 60%;
+            color: gray;
+
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .log {
+            color: #2B3148;
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+
+        .ayalaan {
+            margin: 15px;
+            padding: 15px;
+            display: flex;
+            background-color: #1A1A1A;
+
+
+        }
+
+        .left {
+            margin: 15px;
+            padding: 15px;
+
+        }
+
+        .right {
+            margin: 20px;
+            padding: 20px;
+            color: white;
+            font-size: 20px;
+            text-transform: capitalize;
+
+
+
+        }
+
+
+        span {
+            border: 2px solid;
+            margin: 15px;
+            padding: 15px;
+            background-color: #F84464;
+            color: white;
+            text-decoration: none;
+
+
+        }
+
+        .top {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .movie {
+            padding-left: 20px;
+            padding-right: 20px;
+            text-transform: capitalize;
+            font-size: 18px;
+        }
+
+        .footer {
+            margin-left: 20px;
+            display: flex;
+            gap: 10px;
+            text-transform: capitalize;
+            text-align: center;
+        }
+
+        h1 {
+            padding-left: 20px;
+        }
+
+        .footer img {
+            border-radius: 100px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="toper">
+            <div class="book">
+                <img src="download (2).png" height="60px" width="70%">
+            </div>
+            <div class="search">
+                <form>
+                    <label>search for movies</label>
+                    <input type="search" placeholder="search movies ,events,plays,sports ,and activites">
+
+                </form>
+            </div>
+            <div class="place">
+                <form class="hidden">
+                    <select>
+                        <option>madurai</option>
+                        <option>tirunelveli</option>
+                        <option>chennai</option>
+                        <option>trichy</option>
+                    </select>
+                </form>
+            </div>
+            <a href="login.html">
+                <p class="log"> login </p>
+            </a>
+
+        </div>
+        <div class="activites">
+            <div class="sports">
+                <ul>
+                    <a href="click.html">
+                        <li>movies</li>
+                    </a>
+                    <li class="hidden">stream</li>
+                    <li>events</li>
+                    <li>plays</li>
+                    <li>sports</li>
+                    <li class="hidden">activites</li>
+                </ul>
+            </div>
+            <div class="help">
+                <ul>
+                    <li class="hidden">list your show</li>
+                    <li>help</li>
+                    <li>contact</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+    </nav>
+    <div class="top">
+        <video src="Ayalaan - Official Teaser _ Sivakarthikeyan _ A.R.Rahman _ Rakul Preet Singh __Full-HD.mp4" controls
+            loop height="500px"></video>
+    </div>
+    <div class="ayalaan">
+        <div class="left">
+            <img src="ayalaan-2024.webp" height="400" width="350px">=
+        </div>
+        <div class="right">
+            <h1>ayalaan</h1>
+            <h4> *7.7/10 38.8k votes</h4>
+            <p>add your rating &review</p>
+            <p>your ratings matter</p>
+
+            <button>rate now</button>
+            <br>
+
+            <br>
+            <button>2d</button>
+            <button>tamil,telugu</button>
+            <p>2h 35.action,comedy, sci-fi.u.12jan,2024</p>
+            <br>
+            <a href="seat.html"><span>book tickets</span></a>
+        </div>
+    </div>
+    <br>
+    <div class="movie">
+        <h2>about the movie </h2>
+        <p>an alien teams up with a good hearted young man to stop a ruthless industrialist whose project may lead to
+            the destruction of the planet</p>
+        <hr>
+    </div><br>
+    <h1>cast</h1>
+    <div class="footer">
+        <div class="a">
+            <img src="sivakarthikeyan-1042969-18-09-2017-03-37-23.avif">
+            <h3>sivakarthikeya</h3>
+            <p>actor</p>
+        </div>
+        <div class="a">
+            <img src="rakul-preet-singh-25717-07-10-2016-01-01-08.avif">
+            <h3>rakul preet singh</h3>
+            <p>actor</p>
+        </div>
+        <div class="a">
+            <img src="yogi-babu-1055754-02-12-2021-12-53-23.avif">
+            <h3>yogi babu</h3>
+            <p>actor</p>
+        </div>
+        <div class="a">
+            <img src="karunakaran-1047617-1680242474.avif">
+            <h3>karunakaran</h3>
+            <p>actor</p>
+        </div>
+        <div class="a">
+            <img src="Sharad-kelkar.webp" height="200px" width="200px">
+            <h3>shared kelkar</h3>
+            <p>actor</p>
+        </div>
+        <div class="a">
+            <img src="isha-koppikar-865-07-05-2017-15-13-26.avif">
+            <h3>isha koppikar</h3>
+            <p>actor</p>
+        </div>
+
+    </div>
+    <hr>
+
+</body>
+
+</html>

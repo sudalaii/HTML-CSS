@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayalaan Tamil 2d</title>
+    <style>
+        body {
+            margin-left: 40px;
+            margin-right: 40px;
+
+        }
+
+        .toper {
+            display: grid;
+            grid-template-columns: 3fr 3fr 1fr 1fr;
+            background-color: #FFFFFF;
+
+
+        }
+
+        label {
+            text-transform: capitalize;
+        }
+
+        nav {
+            position: sticky;
+            top: 0px;
+            animation: hello 3s;
+        }
+
+        @keyframes hello {
+            0% {
+                transform: translatey(-100%);
+            }
+
+        }
+
+        li {
+            display: inline;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        .activites {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            border-radius: 20px;
+            background-color: grey;
+            font-size: 16px;
+            color: white;
+            text-transform: capitalize;
+
+
+        }
+
+        li:hover {
+            background-color: black;
+        }
+
+        input {
+            width: 90%;
+            font-size: 20px;
+            color: red;
+            border-radius: 15px;
+        }
+
+        select {
+            font-size: 20px;
+            width: 60%;
+            color: gray;
+
+        }
+
+        .log {
+            color: #2B3148;
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        h1 {
+            text-transform: capitalize;
+        }
+
+        .box {
+            display: flex;
+            /* justify-content: space-evenly; */
+            font-size: 25px;
+            text-transform: capitalize;
+            /* text-align: justify; */
+            gap: 100px;
+            overflow: scroll;
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .theater {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+            padding-left: 40px;
+            padding-right: 40px;
+            gap: 20px;
+            text-transform: capitalize;
+        }
+
+        /* .t{
+            width: 50%;
+        } */
+
+
+        .mon {
+            padding: 15px;
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+
+        }
+
+        .a:hover {
+            color: red;
+        }
+
+        h5 {
+            border: 1px solid;
+            color: blue;
+            display: inline;
+            font-size: 15px;
+        }
+
+        .bigbox {
+            padding-left: 40px;
+            padding-right: 40px;
+
+        }
+
+        .b {
+            border: 3px solid;
+            text-align: center;
+            color: green;
+            border-color: black;
+            height: 70px;
+            width: 150px;
+
+
+        }
+
+        .b:hover {
+            color: blue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="toper">
+            <div class="book">
+                <img src="download (2).png" height="60px" width="70%">
+            </div>
+            <div class="search">
+                <form>
+                    <label>search for movies</label>
+                    <input type="search" placeholder="search movies ,events,plays,sports ,and activites">
+
+                </form>
+            </div>
+            <div class="place">
+                <form class="hidden">
+                    <select>
+                        <option>madurai</option>
+                        <option>tirunelveli</option>
+                        <option>chennai</option>
+                        <option>trichy</option>
+                    </select>
+                </form>
+            </div>
+            <a href="login.html">
+                <p class="log"> login </p>
+            </a>
+        </div>
+        <div class="activites">
+            <div class="sports">
+                <ul>
+                    <a href="click.html">
+                        <li>movies</li>
+                    </a>
+                    <li class="hidden">stream</li>
+                    <li>events</li>
+                    <li>plays</li>
+                    <li>sports</li>
+                    <li class="hidden">activites</li>
+                </ul>
+            </div>
+            <div class="help">
+                <ul>
+                    <li class="hidden">list your show</li>
+                    <li>help</li>
+                    <li>contact</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+    </nav>
+    <div class="top">
+        <h1>ayalaan-tamil</h1>
+    </div>
+    <hr>
+    <div class="box">
+        <div class="mon">
+            <h3>mon<br> 28 <br>jan</h3>
+        </div>
+        <div class="a">
+            <h3>tue <br> 29 <br> jan</h3>
+        </div>
+        <div class="a">
+            <h3> wed <br> 30 <br> jan</h3>
+        </div>
+        <div class="a">
+            <h3>thu <br> 31<br> jan</h3>
+        </div>
+        <div class="a">
+            <h3> fri <br> 1 <br> feb</h3>
+        </div>
+        <div class="a">
+            <h3> sat <br> 2 <br> feb</h3>
+        </div>
+        <div class="a">
+            <h3> sun <br> 3 <br> feb</h3>
+        </div>
+        <div class="a">
+            <h3> mon <br> 4 <br> feb</h3>
+        </div>
+        <div class="a">
+            <h3> tue <br> 5 <br> feb </h3>
+        </div>
+        <div class="a">
+            <h3> wed <br> 6 <br> feb </h3>
+        </div>
+        <div class="a">
+            <h3> thu <br> 7<br> feb </h3>
+        </div>
+
+    </div>
+    <hr>
+    <h4> Tamil .2d</h4>
+    <h5>0-100</h5>
+    <h5> 101-200</h5>
+    <hr>
+
+    <div class="bigbox">
+        <div class="theater">
+            <div class="vetri">
+                <h4>vetri cinemas dolby atoms: madurai<p>non cancel</p>
+                </h4>
+            </div>
+            <div class="a">
+                <h4>info</h4>
+            </div>
+            <div class="b">
+                <h4 class="seatbox">02:25pm <br> vetri </h4>
+            </div>
+            <div class="b">
+                <h4 class="seatbox">06:15am <br> vetri</h4>
+
+            </div>
+            <div class="b">
+                <h4 class="seatbox"> 10:15am <br> vertri</h4>
+            </div>
+        </div>
+        <hr>
+        <div class="theater">
+            <div class="gopuram">
+                <h4>gopuram cinemas atoms and laser<br> projector:madurai <p>non cancel</p>
+                </h4>
+            </div>
+            <div class="a">
+                <h4>info</h4>
+            </div>
+            <div class="b">
+                <h4 class="seatbox">11:00am <br> dolby 2k </h4>
+            </div>
+            <div class="b">
+                <h4 class="seatbox">02:50pm <br> laser atoms</h4>
+
+            </div>
+            <div class="b">
+                <h4 class="seatbox"> 06:20 pm <br> sony 4k</h4>
+            </div>
+        </div>
+        <hr>
+        <div class="theater">
+            <div class="inox">
+                <h4> inox:visal de mall<p>non cancel</p>
+                </h4>
+            </div>
+            <div class="a">
+                <h4>info</h4>
+            </div>
+            <div class="b">
+                <h4 class="seatbox">10:00am <br> sony 4k </h4>
+            </div>
+            <div class="b">
+                <h4 class="seatbox">03:30pm <br> laser atom</h4>
+
+            </div>
+            <div class="b">
+                <h4 class="seatbox"> 07:40pm <br> sony 4k</h4>
+            </div>
+        </div>
+        <hr>
+        <div class="theater">
+            <div class="guru">
+                <h4>guru cinemas<p>non cancel</p>
+                </h4>
+            </div>
+            <div class="a">
+                <h4>info</h4>
+            </div>
+            <div class="b">
+                <h4 class="seatbox">9:00am <br> sony 4k </h4>
+            </div>
+            <div class="b">
+                <h4 class="seatbox">02:00pm <br> laser atom</h4>
+
+            </div>
+            <div class="b">
+                <h4 class="seatbox"> 07:40pm <br> sony 4k</h4>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+
+
+
+</body>
+
+</html>

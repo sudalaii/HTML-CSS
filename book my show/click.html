@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="keywords"
+      content="Book My Show Offers Showtimes,Movie Tickets.Enjoy Online Ticket Booking For Movies Near With You">
+   <title>Book My Show</title>
+   <style>
+      body {
+         margin-left: 30px;
+         margin-right: 30px;
+         background-color: #F5F5F5;
+      }
+
+      .top {
+         display: grid;
+         grid-template-columns: 3fr 3fr 1fr 1fr;
+         background-color: #FFFFFF;
+
+
+      }
+
+      label {
+         text-transform: capitalize;
+      }
+
+      nav {
+         position: sticky;
+         top: 0px;
+         animation: hello 3s;
+      }
+
+      @keyframes hello {
+         0% {
+            transform: translatey(-100%);
+         }
+
+      }
+
+      li {
+         display: inline;
+         margin-right: 20px;
+         margin-left: 20px;
+      }
+
+      .activites {
+         display: grid;
+         grid-template-columns: 3fr 1fr;
+         border-radius: 20px;
+         background-color: grey;
+         font-size: 16px;
+         color: white;
+         text-transform: capitalize;
+
+
+      }
+
+      li:hover {
+         background-color: black;
+      }
+
+      a {
+         color: white;
+         text-decoration: none;
+      }
+
+      .log {
+         color: #2B3148;
+         font-size: 20px;
+         text-transform: capitalize;
+      }
+
+      .container {
+         display: flex;
+         flex-wrap: wrap;
+
+         /* margin-left: 15px;
+        margin-right: 15px; */
+
+
+      }
+
+      .right {
+         width: 50%;
+         /* background-size: cover; */
+
+
+      }
+
+      .left {
+         width: 50%;
+         text-align: center;
+         font-size: 35px;
+         background-color: #17233D;
+
+         text-transform: capitalize;
+         color: white;
+
+
+
+      }
+
+      span {
+         display: inline-block;
+         font-size: 20px;
+         border-radius: 2px;
+         margin-right: 15px;
+         padding: 15px;
+         background-color: red;
+         color: white;
+
+
+      }
+
+      span:hover {
+         background-color: blue;
+         text-decoration: underline;
+      }
+
+      .ads {
+         display: flex;
+         justify-content: center;
+
+
+      }
+
+
+      h2 {
+         padding: 10px;
+         text-transform: capitalize;
+      }
+
+      .movies {
+         display: flex;
+         overflow-x: scroll;
+         background-color: #F5F5F5;
+
+
+      }
+
+      .a {
+         padding-left: 50px;
+         padding-right: 50px;
+
+
+
+      }
+
+      .a img:hover {
+         transform: scale(1.1, 1.1);
+         transition: transform 2s;
+
+      }
+
+      .a img {
+         border-radius: 10px;
+      }
+
+      .a h4 {
+         text-align: center;
+         color: blue;
+         text-transform: capitalize;
+      }
+
+      .map {
+         display: flex;
+         width: 100%;
+         background-color: #2b3148;
+         margin: 15px;
+         border-radius: 10px;
+
+
+
+      }
+
+      .icon {
+         width: 50%;
+      }
+
+      .text {
+         width: 50%;
+         font-size: 20px;
+
+
+      }
+
+
+      .advatisement {
+         display: grid;
+         grid-template-columns: 6fr 1fr;
+         text-align: center;
+         font-size: 23px;
+         background-color: gray;
+         text-transform: capitalize;
+
+      }
+
+      .header {
+         display: grid;
+         grid-template-columns: 2fr 4fr;
+         text-align: center;
+         background-color: #2B3148;
+         text-transform: capitalize;
+         border-radius: 40px;
+      }
+
+      .header p {
+         font-size: 30px;
+         color: white;
+      }
+
+      .header h1 {
+         font-size: 45px;
+         color: #FCD566;
+      }
+
+
+
+
+      .premiere {
+         background-color: #2B3148;
+         text-transform: capitalize;
+         color: #FFFFFF;
+
+
+      }
+
+      .tamil {
+         display: flex;
+         justify-content: space-evenly;
+      }
+
+      button {
+         text-align: start;
+         font-size: 30px;
+         background-color: #DD354E;
+         color: #FFFFFF;
+      }
+
+      button:hover {
+         background-color: green;
+      }
+
+      .event {
+         text-transform: capitalize;
+      }
+
+      .eventall {
+         display: grid;
+         grid-template-columns: 2fr 2fr 2fr;
+         padding-left: 30px;
+         padding-right: 30px;
+
+      }
+
+      .eventall img {
+         border-radius: 40px;
+
+      }
+
+
+      .eventall img:hover {
+         animation-name: sudalai;
+         animation-duration: 2s;
+         box-shadow: 30px 30px 30px;
+
+      }
+
+      @keyframes sudalai {
+         50% {
+            transform: translatex(40px);
+         }
+
+         100% {
+            transform: scale(1.1);
+         }
+
+      }
+
+      .p {
+         margin: 15px;
+         padding: 15px;
+      }
+
+      .music {
+         margin: 10px;
+         padding: 10px;
+         text-transform: capitalize;
+      }
+
+      .studio {
+         display: flex;
+         text-align: center;
+         gap: 20px;
+         justify-content: space-evenly;
+         text-transform: capitalize;
+
+
+
+
+      }
+
+      .c {
+         text-align: center;
+         border-radius: 5px;
+         font-size: 15px;
+
+
+      }
+
+      .footer {
+         display: grid;
+         grid-template-columns: 2fr 3fr 1fr;
+         background-color: black;
+         color: gray;
+         text-align: center;
+         text-transform: capitalize;
+
+
+
+      }
+
+      .footer :hover {
+         color: white;
+      }
+
+      .footerb {
+         display: grid;
+         grid-template-columns: 2fr 2fr 2fr;
+         text-align: center;
+         background-color: gray;
+         color: blue;
+         text-transform: capitalize;
+      }
+
+      .footerb h3:hover {
+         color: brown;
+      }
+
+      .my {
+         background-color: black;
+         color: gray;
+         text-align: start;
+         padding-left: 50px;
+         text-transform: capitalize;
+      }
+
+      .end {
+         display: flex;
+         justify-content: center;
+         background-color: #F5F5F5;
+      }
+
+      .fit {
+         display: flex;
+         justify-content: center;
+      }
+
+      .z {
+         display: flex;
+         justify-content: center;
+         font-size: 20px;
+         text-transform: capitalize;
+         text-decoration: underline;
+      }
+
+      input {
+         width: 90%;
+         font-size: 20px;
+         color: red;
+         border-radius: 15px;
+      }
+
+      select {
+         font-size: 20px;
+         width: 60%;
+         color: gray;
+
+      }
+
+      @media screen and (max-width:480px) {
+         body {
+            margin-left: 20px;
+            margin-right: 20px
+         }
+
+         li {
+            margin-left: 0px;
+            margin-right: 0px;
+            display: inline;
+            font-size: 15px;
+
+
+         }
+
+         .activites {
+            grid-template-columns: 2fr 1fr;
+         }
+
+         nav {
+            position: sticky;
+            top: 0px;
+            animation: world 3s;
+         }
+
+         @keyframes world {
+            0% {
+               transform: translatex(-100%)
+            }
+         }
+
+
+         .container {
+            flex-wrap: wrap;
+
+
+         }
+
+         .right {
+            width: 100%;
+            order: 1;
+         }
+
+         .left {
+            width: 100%;
+            order: 2;
+            background-color: #DD354E;
+            font-size: 15px;
+
+
+
+         }
+
+         .a {
+            padding-left: 5px;
+            padding-right: 5px;
+            font-size: 10px;
+
+         }
+
+         .a img {
+            height: 250px;
+            width: 150px;
+            border-radius: 10px;
+
+         }
+
+         .aimg:hover {
+            transform: scale(1.1, 1.1);
+            transition: transform 2s;
+         }
+
+
+         .recommended {
+            margin-left: 0px;
+         }
+
+         .map {
+            width: 90%;
+         }
+
+         .header {
+            grid-template-columns: 1fr 1fr;
+
+
+         }
+
+         .header p {
+            font-size: 15px;
+
+         }
+
+         .header h1 {
+            font-size: 15px;
+         }
+
+         .ads {
+            display: none;
+         }
+
+         .tamil {
+            flex-wrap: wrap;
+            background-color: white;
+         }
+
+         .b img {
+            height: 100px;
+            width: 100px;
+
+         }
+
+         .premiere {
+            background-color: white;
+            color: #2B3148;
+         }
+
+         .eventall img {
+            height: 100px;
+            border-radius: 10px;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+            padding-left: 0px;
+            padding-right: 0px;
+
+         }
+
+
+
+
+
+         .studio {
+            padding-left: 10px;
+            padding-right: 10px;
+            flex-wrap: wrap;
+
+         }
+
+         .hidden {
+            display: none;
+         }
+
+      }
+   </style>
+</head>
+
+<body>
+   <nav>
+      <div class="top">
+         <div class="book">
+            <img src="download (2).png" height="60px" width="70%">
+         </div>
+         <div class="search">
+            <form>
+               <label>search for movies</label>
+               <input type="search" placeholder="search movies ,events,plays,sports ,and activites">
+
+            </form>
+         </div>
+         <div class="place">
+            <form class="hidden">
+               <select>
+                  <option>madurai</option>
+                  <option>tirunelveli</option>
+                  <option>chennai</option>
+                  <option>trichy</option>
+               </select>
+            </form>
+         </div>
+         <a href="login.html">
+            <p class="log"> login </p>
+         </a>
+      </div>
+      <div class="activites">
+         <div class="sports">
+            <ul>
+               <a href="click.html">
+                  <li>movies</li>
+               </a>
+               <li class="hidden">stream</li>
+               <li>events</li>
+               <li>plays</li>
+               <li>sports</li>
+               <li class="hidden">activites</li>
+            </ul>
+         </div>
+         <div class="help">
+            <ul>
+               <li class="hidden">list your show</li>
+               <li>help</li>
+               <li>contact</li>
+            </ul>
+         </div>
+      </div>
+      <br>
+   </nav>
+
+   <div class="container">
+      <div class="left">
+         <br> <br> book your ticket<br><br>
+         the most wonderful<br> chocolate-makers coming home <br><br>
+         <span> pre-book now </span>
+      </div>
+      <div class="right">
+         <img
+            src="HD-wallpaper-wonka-2023-poster-actor-wonka-willy-wonka-afis-man-pink-movie-flower-red-timothee-chalamet-hat.jpg"
+            style="height:100%;width: 100%;">
+      </div>
+   </div><br>
+   <div class="ads">
+      <img src="Projector_banner_1242x450.gif" height="500px">
+   </div>
+   <h2 class="recommended">recommended movies</h2>
+   <div class="movies">
+      <a href="ayalaan.html">
+         <div class="a">
+            <img src="ayalaan-1-17044.jpeg" height="400px" width="280px">
+            <h4> name: ayalaan<br>
+               rating:7.8 <br>35.8k votes</h4>
+         </div>
+      </a>
+      <div class="a">
+         <img src="Captain-Miller-2024-Action-Adventure-Tamil-Movie-Review.webp" height="400px" width="280px">
+         <h4 class="name">name: caption millar<br>
+            rating: 7.7 <br> 44.6k votes</h4>
+      </div>
+
+      <div class="a">
+         <img src="106754346.webp" height="400px" width="280px">
+         <h4> name: mission imposibile <br>
+            rating: 8.5 <br> 61.7k votes</h4>
+      </div>
+
+      <div class="a">
+         <img src="MV5BNTgwMjQ1OWEtZDZhZS00YTM1LTg4NWUtMTdjZmE0MzQ0MTlmXkEyXkFqcGdeQXVyMTQ3Mzk2MDg4._V1_.jpg"
+            height="400px" width="280px">
+         <h4>name: fighter<br>
+            rating: 7.8<br> 51.8k votes</h4>
+      </div>
+      <div class="a">
+         <img src="download (1).jpeg" height="400px" width="280px">
+         <h4>name: leo
+            <br>rating: 7.8 <br> 71k votes
+         </h4>
+      </div>
+      <div class="a">
+         <img src="pathaan-et00323848-1674372556.avif" height="400px" width="280px">
+         <h4>name:pathaan<br>
+            rating:8.0 <br> 71k votes</h4>
+      </div>
+
+      <div class="a">
+         <img src="et00301886-nsckbqkrmt-portrait.avif" height="400px" width="280px">
+         <h4> name: salaar <br> rating :6.0<br> 51k votes</h4>
+
+      </div>
+      <div class="a">
+         <img src="et00313411-dvmdcxgrrk-portrait.avif" height="400px">
+         <h4>name:tiger 3 <br> rating : 6.0 <br> 55k votes</h4>
+
+      </div>
+
+   </div>
+   <br>
+   <div class="map">
+      <div class="icon">
+         <a href="https://maps.app.goo.gl/ef56pesWYAxAGVh49"> <img src="XtpTm.png" height="100px">
+      </div></a>
+      <div class="text">
+         <a href="https://maps.app.goo.gl/ef56pesWYAxAGVh49">
+            <h2>brouse by cinimas</h2>
+            <h4>see whats planning in in cinemas near your</h4>
+         </a>
+      </div>
+   </div><br><br>
+   <div class="advatisement">
+      <div class="card"> <br><br>credit card with movie offers & more<br> <br>500 welcome offer. 2 free movie tickets.
+         100 off onf&b for movies<br><br><span>apply now </span> </div>
+      <div class="imgesclass"><img src="images (1).jpeg"></div>
+
+   </div>
+   <br><br>
+   <div class="header">
+      <p>book my show <br> stream</p>
+      <h1>endless entertainment anytime. any where</h1>
+   </div>
+   <div class="event">
+      <h1>the best events this week</h1>
+      <h4>monday to sunday we got you covered</h4>
+      <div class="eventall">
+         <div class="eventleft">
+            <img src="comedy-shows-collection-202211140440.avif">
+         </div>
+         <div class="eventright">
+            <img src="workshop-and-more-web-collection-202211140440.avif">
+         </div>
+         <div class="event both">
+
+            <img src="music-shows-collection-202211140440.avif">
+         </div>
+      </div>
+
+
+
+   </div><br><br>
+
+   <div class="premiere">
+      <h1 class="p">premieres<br> <br>brand new releases every friday </h1>
+      <div class="tamil">
+         <div class="b">
+            <img src="odavum-mudiyadhu-oliyavum-mudiyadhu-et00378435-1705046388.avif" height="300px" width="250px"><br>
+            <button>premiere</button>
+            <h3>odavum mudiyadhu <br> oliyavum mudiyadhu <br><br> tamil</h3>
+         </div>
+         <div class="b">
+            <img src="ET00383845.avif" height="300px" width="250px"><br>
+            <button>premiere</button>
+            <h3>target (korean)<br><br> korean</h3>
+         </div>
+         <div class="b">
+            <img src="the-communion-girl-et00383529-1705054753.avif" height="300px" width="250px"><br>
+            <button>premiere</button>
+            <h3>the communion girl <br> <br>spanish</h3>
+         </div>
+         <div class="b">
+            <img src="download (2).jpeg" height="300px" width="250px"><br>
+            <button>exclusive</button>
+            <h3>acide <br> <br>french</h3>
+         </div>
+         <div class="b">
+            <div class="hidden">
+               <img src="ET00370554.avif" height="300px" width="250px"><br>
+               <button>premiere</button>
+               <h3> journy to bethlehem <br> <br>english </h3>
+            </div>
+         </div>
+      </div>
+   </div>
+   <br><br>
+   <div class="music">
+      <h3> your music studio </h3>
+      <div class="studio">
+         <div class="c">
+            <img src="et00383621-zvqvmlypsp-portrait.avif" height="400px" width="250">
+            <h5>currtain rasiser of the <br>69th filmfare awards 2024</h5>
+            <p>mahatma mandir convention and exhibition</p>
+         </div>
+         <div class="c">
+            <img src="et00371920-ugwkrawdks-portrait.avif" height="400px" width="250px">
+            <h5>bangalore open air 2024</h5>
+            <p>bits club:bengaluru concerts</p>
+         </div>
+         <div class="c">
+            <img src="et00373677-hrqpbwvwsu-portrait.avif" height="400px" width="250px">
+            <h5>ed sheeran:+-=/* tour</h5>
+            <p>mahalaxmi race course: mumbai concerts</p>
+         </div>
+         <div class="c">
+            <img src="et00384230-fsvcjynjdm-portrait.avif" height="400px" width="250px">
+            <h5>69th hyundai filmfare awars with gujarar....</h5>
+            <p>gift city: gandhinagar,gujarat felicitation</p>
+         </div>
+         <div class="c">
+            <img src="et00384522-vrdttfzmzw-portrait.avif" height="400px" width="250px">
+            <h5>69th hyundai film fare awards with gujarat...<h5>
+                  <p>multiple venues concerts</p>
+         </div>
+      </div>
+   </div>
+   <div class="footer">
+      <div class="k">
+         <h3> list your show</h3>
+      </div>
+      <div class="g">
+         <h4>got a show ,event,activity,or a great expreience? partner with us &get listed on bookmyshow</h4>
+      </div>
+      <div class="contact">
+         <h3><span>contact today</span></h3>
+      </div>
+   </div>
+   <div class="footerb">
+      <div class="k">
+         <br> <img src="1000_F_127801056_RI7S31G7GWmx7AFWQHenno91gHNltuBA.jpg" height="50px">
+         <h3> 24/7customer care</h3>
+      </div>
+      <div class="k">
+         <br><img src="download (1).png" height="50px">
+         <h3>resend booking confirmation </h3>
+      </div>
+      <div class="k">
+         <br> <img
+            src="cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAyL3Zwcm9qZWN0b2xkLWljb24tanUtMjAyLWpvYjE3MTUucG5n.webp"
+            height="50px">
+         <h3>subscribe to the newsletter</h3>
+      </div>
+   </div>
+   <div class="my">
+      <h3>countries</h3>
+      <p>indonesia,singapore ,uae ,srilanka, west indies </p>
+      <h3>help</h3>
+      <p>about us ,contact us current opening, press release</p>
+      <h3>book my show exclusives</h3>
+      <p>lollapalooza india ,superstar,book smile ,corporate vouchers,gift cards</p>
+   </div>
+   <div class="end">
+      <img src="download (2).png">
+   </div>
+   <div class="fit">
+      <div class="you">
+         <img src="hd-youtube-logo-png-transparent-background-20.png" height="50px">
+      </div>
+      <div class="insta">
+         <img src="instagram-mobile-app-logo-instagram-app-icon-ig-app-free-free-vector.jpg" height="50px">
+      </div>
+      <div class="twitter">
+         <img src="3938028.png" height="45px">
+      </div>
+      <div class="face">
+         <img src="1513df9ea311909d18bc53b971bddd72.jpg" height="50px">
+      </div>
+
+   </div>
+   <div class="z">
+      <h5>copyrights2024. bigtree entertainment pvt.ltd.all rights reseved</h5>
+   </div>
+
+</body>
+
+</html>
